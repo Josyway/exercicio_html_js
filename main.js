@@ -15,13 +15,19 @@ form.addEventListener('submit', function (e) {
         const containerMensagemSucesso = document.querySelector(".success-message");
         containerMensagemSucesso.innerHTML = mensagemSucesso;
         containerMensagemSucesso.style.display = 'block';
-
+        const containerMensagemErro = document.querySelector(".error-message");
+        containerMensagemErro.innerHTML = mensagemErro;
+        containerMensagemErro.style.display = 'none';
+        
         primeiroNumero.value = '';
         segundoNumero.value = '';
     }else{ 
         const containerMensagemErro = document.querySelector(".error-message");
         containerMensagemErro.innerHTML = mensagemErro;
         containerMensagemErro.style.display = 'block';
+        const containerMensagemSucesso = document.querySelector(".success-message");
+        containerMensagemSucesso.innerHTML = mensagemSucesso;
+        containerMensagemSucesso.style.display = 'none';
 
         }
     })
